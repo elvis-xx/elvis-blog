@@ -7,8 +7,33 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="wrapper">
+    <div id="top">
+      
+    </div>
+    <div id="header">
+      <div id="logo">
+        <a href="/"><h1>Elvis's Blog</h1></a>
+      </div>
+      <div id="navigation">
+        <ul id="main-nav">
+          <li><a href="#" class="selected">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content">
+      <div id="main">
+        <%= yield %>
+      </div>
+      <div id="sidebar" style="height: 500px;">
+        <h3>About this blog</h3>
+      </div>
+    </div>
+    <div id="footer">
+      
+    </div>
+  </div>
 </body>
 </html>
